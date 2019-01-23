@@ -19,5 +19,5 @@ end
 
 def valid_phone_number?(phone)
  var_b = phone.scan(/[(\s-]?(\d{3})[)\s-]?\d{3}[\s-]?\d{4}/)
- var_b[0].class == String
+ return var_b.class
 end
