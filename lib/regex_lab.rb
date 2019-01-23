@@ -18,6 +18,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
- var_b = phone.scan(/[(\s-]?(\d{3})[)\s-]?\d{3}[\s-]?\d{4}/)
+ var_b = phone.match(/[(\s-]?(\d{3})[)\s-]?\d{3}[\s-]?\d{4}/)
  return var_b.class
 end
